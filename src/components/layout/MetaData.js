@@ -1,10 +1,10 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const MetaData = ({ title }) => {
   return (
     <Helmet>
-      <title>{`${title}`}</title>
+      <title data-rh="true">{`${title}`}</title>
     </Helmet>
   );
 };

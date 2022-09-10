@@ -11,6 +11,44 @@ const cx = classNames.bind(styles);
 const ChatNav = () => {
   const [navActive, setNavActive] = useState('message');
 
+  const menuTopItems = [
+    {
+      label: <MessageTwoTone className={cx('tab-menu-icon')} />,
+      className: cx('tab-menu-item', {
+        selected: navActive === 'message',
+      }),
+      onClick: () => setNavActive('message'),
+      key: 'item-1',
+    },
+    {
+      label: <ContactsTwoTone className={cx('tab-menu-icon')} />,
+      className: cx('tab-menu-item', {
+        selected: navActive === 'contact',
+      }),
+      onClick: () => setNavActive('contact'),
+      key: 'item-2',
+    },
+  ];
+
+  const menuBottomItems = [
+    {
+      label: <CloudTwoTone className={cx('tab-menu-icon')} />,
+      key: 'item-3',
+      onClick: () => setNavActive('cloud'),
+      className: cx('tab-menu-item', {
+        selected: navActive === 'cloud',
+      }),
+    },
+    {
+      label: <SettingTwoTone className={cx('tab-menu-icon')} />,
+      key: 'item-4',
+      onClick: () => setNavActive('setting'),
+      className: cx('tab-menu-item', {
+        selected: navActive === 'setting',
+      }),
+    },
+  ];
+
   const handleChangeNav = (e) => {
     console.log(e.target.name);
   };
@@ -27,43 +65,8 @@ const ChatNav = () => {
             />
           </div>
           <div className={cx('main-tab')}>
-            <Menu className={cx('tab-menu')}>
-              <Menu.Item
-                onClick={() => setNavActive('message')}
-                className={cx('tab-menu-item', {
-                  selected: navActive === 'message',
-                })}
-              >
-                <MessageTwoTone className={cx('tab-menu-icon')} />
-              </Menu.Item>
-              <Menu.Item
-                onClick={() => setNavActive('contact')}
-                className={cx('tab-menu-item', {
-                  selected: navActive === 'contact',
-                })}
-              >
-                <ContactsTwoTone className={cx('tab-menu-icon')} />
-              </Menu.Item>
-            </Menu>
-
-            <Menu className={cx('tab-menu', 'tab-menu-bottom')}>
-              <Menu.Item
-                onClick={() => setNavActive('cloud')}
-                className={cx('tab-menu-item', {
-                  selected: navActive === 'cloud',
-                })}
-              >
-                <CloudTwoTone className={cx('tab-menu-icon')} />
-              </Menu.Item>
-              <Menu.Item
-                onClick={() => setNavActive('setting')}
-                className={cx('tab-menu-item', {
-                  selected: navActive === 'setting',
-                })}
-              >
-                <SettingTwoTone className={cx('tab-menu-icon')} />
-              </Menu.Item>
-            </Menu>
+            <Menu className={cx('tab-menu')} items={menuTopItems} />
+            <Menu className={cx('tab-menu', 'tab-menu-bottom')} items={menuBottomItems} />
           </div>
         </div>
 
