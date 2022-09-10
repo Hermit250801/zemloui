@@ -1,0 +1,84 @@
+@import 'normalize.css';
+@import 'antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+:root {
+  --N10: #fbfbfd;
+  --N20: #eeeff2;
+  --N30: #e5e7eb;
+  --N40: #e1e4ea;
+  --N50: #e1e4ea;
+  --N60: #abb4bc;
+  --N70: #abb4bc;
+  --N80: #72808e;
+  --N90: #72808e;
+  --N100: #394e60;
+  --N200: #394e60;
+  --N300: #001a33;
+  --NG10: #f4f5f7;
+  --NG20: #e8eaef;
+  --NG30: #e1e4ea;
+  --NG40: #abb4bc;
+  --NG50: #72808e;
+  --NG60: #394e60;
+  --NG70: #394e60;
+  --NG80: #394e60;
+  --NG90: #081020;
+  --NG100: #050a19;
+  --B10: #e5efff;
+  --B20: #c8deff;
+  --B30: #abcdff;
+  --B40: #72abff;
+  --B50: #3989ff;
+  --B60: #0068ff;
+  --B70: #0068ff;
+  --B80: #004bb9;
+  --B90: #004bb9;
+  --B100: #004bb9;
+  --STB10: #f0f4fa;
+  --STB20: #e2eaf4;
+  --STB30: #cddaea;
+  --STB40: #b3c6db;
+  --STB50: #8da6c4;
+  --STB60: #58789d;
+  --STB70: #415a77;
+  --STB80: #31465e;
+  --STB90: #25374b;
+  --STB100: #192838;
+  --SKB10: #ecf8fe;
+  --SKB20: #d8f1fd;
+  --SKB30: #bbe8fb;
+  --SKB40: #94ddf9;
+  --SKB50: #5fcbf2;
+  --SKB60: #12aee2;
+  --SKB70: #0e83aa;
+  --SKB80: #0b6684;
+
+  --black: 900;
+  --extrabold: 800;
+  --bold: 700;
+  --semibold: 600;
+  --medium: 500;
+  --regular: 400;
+  --thin: 200;
+  --light: 100;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}

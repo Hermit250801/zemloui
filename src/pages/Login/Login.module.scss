@@ -1,0 +1,177 @@
+.wrapper {
+  background: url('../../assets/img/background.svg') no-repeat center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  .layout-login {
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 24px 20px 0;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    width: 114px;
+    height: 41px;
+    margin-bottom: 18px;
+  }
+
+  .desc {
+    font-size: 1.7rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.body {
+  min-width: 320px;
+  width: 400px;
+  background-color: #fff;
+  padding: 30px 45px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  --webkit-border-radius: 2px 2px 0 0;
+
+  .login-title {
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  form {
+    width: 100%;
+    .form-item {
+      width: 100%;
+    }
+  }
+
+  .login-input {
+    border: none !important;
+    border-bottom: 1px solid #ecedf0 !important;
+    outline: none !important;
+    input {
+      padding: 4px 0 !important;
+    }
+  }
+
+  .login-form-button {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 20px;
+    color: #fff;
+    background-color: #0190f3;
+    border-radius: 5px;
+  }
+}
+
+.forgot-password {
+  display: block;
+  text-align: center;
+  color: #333;
+  font-size: 1.3rem;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.more-action {
+  display: block;
+  padding: 20px 15px;
+  color: #888;
+  font-size: 0.875em;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 0;
+}
+.register-button {
+  text-decoration: underline !important;
+}
+
+//footer
+
+//footer
+.footer {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  margin-top: 50px;
+  font-size: 1.5rem;
+
+  p {
+    display: block;
+    margin-bottom: 12px;
+    color: #555;
+    font-size: 0.75em;
+    text-align: center;
+  }
+
+  .select-lang {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+  }
+
+  .selected {
+    font-weight: 600;
+  }
+
+  a {
+    padding-right: 10px;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  .active {
+    font-weight: bold;
+  }
+
+  .logos {
+    ul {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+      justify-content: center;
+      margin-top: 12px;
+
+      li {
+        margin: 0 8px;
+      }
+    }
+
+    i {
+      display: block;
+      background-image: url(../../assets/img/logos.png);
+      background-repeat: no-repeat;
+      background-size: 120px 24px;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+
+    .logo-zingmp3 {
+      background-position: -24px 0;
+    }
+
+    .logo-zingtv {
+      background-position: -48px 0;
+    }
+
+    .logo-zing {
+      background-position: -72px 0;
+    }
+
+    .logo-baomoi {
+      background-position: -96px 0;
+    }
+  }
+}
