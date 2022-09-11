@@ -1,12 +1,11 @@
 import React from 'react';
 import styles from './Login.module.scss';
 import classNames from 'classnames/bind';
-import 'antd/dist/antd.css';
 import { Button, Checkbox, Form, Input } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 
 import zlogo from '~/assets/img/zlogo.png';
-import MetaData from '~/components/layout/MetaData';
+import MetaData from '~/components/layout/MetaData/MetaData';
 
 const cx = classNames.bind(styles);
 const Login = () => {

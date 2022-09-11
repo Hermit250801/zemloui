@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import { HelmetProvider } from 'react-helmet-async';
+import 'antd/dist/antd.min.css';
 
 import Login from './pages/Login';
 import Register from './pages/Register';

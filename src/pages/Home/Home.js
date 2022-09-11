@@ -5,7 +5,7 @@ import { Button, Menu, BackTop } from 'antd';
 import { DownloadOutlined, GlobalOutlined } from '@ant-design/icons';
 
 import styles from './Home.module.scss';
-import MetaData from '~/components/layout/MetaData';
+import MetaData from '~/components/layout/MetaData/MetaData';
 
 const cx = classNames.bind(styles);
 
@@ -104,7 +104,7 @@ const Home = () => {
                     <div></div>
                   </div>
                   <div className={cx('share-pc')}>
-                    <img src="https://stc-zaloprofile.zdn.vn/pc/v1/images/img_pc.png" />
+                    <img src="https://stc-zaloprofile.zdn.vn/pc/v1/images/img_pc.png" alt="" />
                   </div>
                 </div>
               </div>
